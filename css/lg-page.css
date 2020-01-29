@@ -1,0 +1,169 @@
+/* fonts */
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Audiowide Regular'), local('Audiowide-Regular'),
+       url('../fonts/audiowide-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/audiowide-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-regular - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-italic - latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'),
+       url('../fonts/lato-v16-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v16-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fonts */
+*{
+	margin: 0;
+}
+body{
+	margin: 0;
+}
+.wrap{
+	width: 1440px;
+	background-image: url("../img/login-bg.png");
+	background-size: cover;
+	padding-bottom: 230px;
+}
+.log-menu{
+	width: 1395px;
+	height: 86px;
+	background: linear-gradient(180deg, #271861 -44.83%, #18103D 26.26%);
+	clip-path: polygon(0 0, 2.08% 45.35%, 62.51% 45.45%, 65.9% 100%, 97.6% 100%, 100% 0%);
+}
+.log-menu{
+	display: flex;
+	justify-content: flex-end;
+}
+.log-menu__list{
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+}
+.log-menu__item{
+	height: 86px;
+}
+.log-menu__link{
+  font-family: 'Audiowide';
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  display: block;
+  margin: 29px 0 26px;
+  text-decoration: none;
+}
+.lg{
+	margin-right: 58px;
+}
+.cr{
+	margin-right: 66px;
+}
+ .log-menu__item:hover .log-menu__link{
+	color: #F6105F;
+}
+.log-menu__item:hover .hover-link{
+	width: 52.5%;
+	margin: auto;
+	border-top: 3px solid #F6105F;
+}
+.log__title__div{
+	margin-top: 126px;
+	text-align: center;
+	color:#fff;
+}
+.log__title{
+  font-family: 'Audiowide';
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+}
+.log__text{
+  font-family: 'Audiowide';
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+}
+.login-card{
+	width: 455px;
+	height: 283px;
+	box-sizing: border-box;
+	margin: 9px auto 0;
+	padding: 30px 45px;
+	border-radius: 17px;
+	background: rgba(24, 16, 61, 0.7);
+	font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400; 
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+}
+.login-group{
+	margin-bottom: 26px;
+	position: relative;
+}
+.log-input{
+	width: 386px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+	padding: 16px 0;
+	font-family: 'Lato';
+    font-style: italic;
+    font-weight: 400; 
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+}
+.log-input:focus{
+	outline: none;
+}
+.login{
+	margin-top: 9px;
+	display: flex;
+	justify-content: space-between;
+}
+.login-button{
+	padding: 7px 28px;
+	text-transform: uppercase;
+	font-family: 'Audiowide';
+  	font-weight: 400;
+  	font-size: 18px;
+  	line-height: 23px;
+  	letter-spacing: 0.45px;
+  	color: #18103D;
+	border-radius: 2px;
+	background-color: #fff;
+	border: none;
+}	
+button:focus{
+	outline: none;
+}
+.log-input:focus{
+	border-bottom: 1px solid #F6105F;
+}
+.log-input:focus label{
+	color: #F6105F;
+}
+.icon-Group-2{
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.forgot-pas{
+	margin-bottom: 6px;
+}
