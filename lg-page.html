@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://i.icomoon.io/public/temp/c9cb9dea2e/UntitledProject/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/lg-page.css">
 	<title>login page</title>
 </head>
@@ -31,18 +31,29 @@
 			</div>
 			<div class="login-group">
 				<label for="">Password</label>
-				<span class="icon-Group-2"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
-				<input type="text" class="log-input">
+				<img src="img/Group2.png" class="Group2" alt="" onclick="showPass()">
+				<input class="log-input" type="password" id='myInput'>
 			</div>
 			<div class="login">
 				<button class="login-button">Login</button>
 				<div class="forgot">
-					<p class="forgot-pas">Forgot Password?</p>
-					<p class="forgot-em">Forgot account?</p>
+					<a class="forgot-pas">Forgot Password?</a>
+					<a class="forgot-em">Forgot account?</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script>
+	function showPass() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
 </body>
 </html>
