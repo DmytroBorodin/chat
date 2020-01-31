@@ -32,6 +32,17 @@
 body{
 	margin: 0;
 }
+a{
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}
+button{
+	cursor: pointer;
+}
+button:focus{
+	outline: none;
+}
 .wrap{
 	width: 1440px;
 	background-image: url("../img/login-bg.png");
@@ -47,6 +58,7 @@ body{
 .log-menu{
 	display: flex;
 	justify-content: flex-end;
+	box-shadow: 0px 3px 5px rgba(16, 8, 24, 0.16);
 }
 .log-menu__list{
 	display: flex;
@@ -111,6 +123,7 @@ body{
     font-size: 14px;
     line-height: 1;
     color: #fff;
+    box-shadow: 0px 2px 10px rgba(16, 8, 24, 0.155048);
 }
 .login-group{
 	margin-bottom: 26px;
@@ -150,19 +163,18 @@ body{
 	background-color: #fff;
 	border: none;
 }	
-button:focus{
-	outline: none;
+.login-group:focus-within{
+	color: #F6105F;
 }
 .log-input:focus{
 	border-bottom: 1px solid #F6105F;
 }
-.log-input:focus label{
-	color: #F6105F;
-}
-.icon-Group-2{
+.Group2{
+	display: block;
 	position: absolute;
 	right: 0;
 	top: 30px;
+	cursor: pointer;
 }
 .forgot-pas{
 	margin-bottom: 6px;
